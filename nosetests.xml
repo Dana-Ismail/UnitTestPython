@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="UTF-8"?><testsuite name="nosetests" tests="19" errors="8" failures="1" skip="0"><testcase classname="test_calculatorApp.TestCalculate" name="test_AddInvalid" time="0.001"><system-out><![CDATA[Setup .. 
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_AddPass" time="0.000"><failure type="builtins.AssertionError" message="5 != 2&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Setup .. &#10;tearDown .. &#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\test_calculatorApp.py", line 23, in test_AddPass
+    self.assertEqual(calculate('1', 8, 5), 2)
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 912, in assertEqual
+    assertion_func(first, second, msg=msg)
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 905, in _baseAssertEqual
+    raise self.failureException(msg)
+5 != 2
+-------------------- >> begin captured stdout << ---------------------
+Setup .. 
+tearDown .. 
+
+--------------------- >> end captured stdout << ----------------------]]></failure><system-out><![CDATA[Setup .. 
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_AddPassWithMocEx3" time="0.000"><system-out><![CDATA[Setup .. 
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_AddPassWithMockEx1" time="0.001"><system-out><![CDATA[Setup .. 
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_AddPassWithMockEx2" time="0.001"><system-out><![CDATA[Setup .. 
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_DividByZerrorEx1" time="0.000"><system-out><![CDATA[Setup .. 
+D input is not a number!
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_DividByZerrorEx2" time="0.001"><system-out><![CDATA[Setup .. 
+D input is not a number!
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_DividByZerrorRegex" time="0.000"><system-out><![CDATA[Setup .. 
+D input is not a number!
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_Exist" time="0.001"><error type="builtins.ValueError" message="Invalid choice&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Setup .. &#10;tearDown .. &#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\test_calculatorApp.py", line 62, in test_Exist
+    self.assertEqual(isExit(""), True)
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\calculatorApp.py", line 83, in isExit
+    raise ValueError("Invalid choice")
+Invalid choice
+-------------------- >> begin captured stdout << ---------------------
+Setup .. 
+tearDown .. 
+
+--------------------- >> end captured stdout << ----------------------]]></error><system-out><![CDATA[Setup .. 
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_calculate_choice" time="0.001"><error type="builtins.Exception" message="Invalid choice!&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Setup .. &#10;tearDown .. &#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\test_calculatorApp.py", line 57, in test_calculate_choice
+    self.assertEqual(calculate('5', 8, 5), 13)
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\calculatorApp.py", line 73, in calculate
+    raise Exception("Invalid choice!")
+Invalid choice!
+-------------------- >> begin captured stdout << ---------------------
+Setup .. 
+tearDown .. 
+
+--------------------- >> end captured stdout << ----------------------]]></error><system-out><![CDATA[Setup .. 
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_calculate_devision_by_zero" time="0.000"><error type="builtins.ValueError" message="inputs can not be null&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Setup .. &#10;inputs can not be null&#10;tearDown .. &#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\test_calculatorApp.py", line 46, in test_calculate_devision_by_zero
+    self.assertEqual(calculate('4', 8, 0), 5)
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\calculatorApp.py", line 52, in calculate
+    raise ValueError("inputs can not be null")
+inputs can not be null
+-------------------- >> begin captured stdout << ---------------------
+Setup .. 
+inputs can not be null
+tearDown .. 
+
+--------------------- >> end captured stdout << ----------------------]]></error><system-out><![CDATA[Setup .. 
+inputs can not be null
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_calculate_division" time="0.000"><error type="builtins.ValueError" message="inputs can not be null&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Setup .. &#10;inputs can not be null&#10;tearDown .. &#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\test_calculatorApp.py", line 42, in test_calculate_division
+    self.assertEqual(calculate('4', 0, 8), 0)
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\calculatorApp.py", line 52, in calculate
+    raise ValueError("inputs can not be null")
+inputs can not be null
+-------------------- >> begin captured stdout << ---------------------
+Setup .. 
+inputs can not be null
+tearDown .. 
+
+--------------------- >> end captured stdout << ----------------------]]></error><system-out><![CDATA[Setup .. 
+inputs can not be null
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_calculate_invalidInput" time="0.000"><error type="builtins.ValueError" message="inputs can not be null&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Setup .. &#10;inputs can not be null&#10;tearDown .. &#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\test_calculatorApp.py", line 54, in test_calculate_invalidInput
+    self.assertEqual(calculate('4', "", 5), (8, '/', 5, '=', 1.6))
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\calculatorApp.py", line 52, in calculate
+    raise ValueError("inputs can not be null")
+inputs can not be null
+-------------------- >> begin captured stdout << ---------------------
+Setup .. 
+inputs can not be null
+tearDown .. 
+
+--------------------- >> end captured stdout << ----------------------]]></error><system-out><![CDATA[Setup .. 
+inputs can not be null
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_division" time="0.000"><error type="builtins.ZeroDivisionError" message="You can't divide by zero!&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Setup .. &#10;You can't divide by zero!&#10;tearDown .. &#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\test_calculatorApp.py", line 39, in test_division
+    self.assertEqual(divide(8, 0), "You can't divide by zero!")
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\calculatorApp.py", line 39, in divide
+    raise ZeroDivisionError("You can't divide by zero!")
+You can't divide by zero!
+-------------------- >> begin captured stdout << ---------------------
+Setup .. 
+You can't divide by zero!
+tearDown .. 
+
+--------------------- >> end captured stdout << ----------------------]]></error><system-out><![CDATA[Setup .. 
+You can't divide by zero!
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_divisionInvalid" time="0.001"><error type="builtins.ZeroDivisionError" message="You can't divide by zero!&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Setup .. &#10;You can't divide by zero!&#10;tearDown .. &#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\test_calculatorApp.py", line 51, in test_divisionInvalid
+    self.assertNotEqual(divide(8, 0), 8)
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\calculatorApp.py", line 39, in divide
+    raise ZeroDivisionError("You can't divide by zero!")
+You can't divide by zero!
+-------------------- >> begin captured stdout << ---------------------
+Setup .. 
+You can't divide by zero!
+tearDown .. 
+
+--------------------- >> end captured stdout << ----------------------]]></error><system-out><![CDATA[Setup .. 
+You can't divide by zero!
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_multiplication" time="0.000"><system-out><![CDATA[Setup .. 
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_substraction" time="0.001"><system-out><![CDATA[Setup .. 
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculate" name="test_user_input" time="0.000"><error type="builtins.ValueError" message="Input can't be empty&#10;-------------------- &gt;&gt; begin captured stdout &lt;&lt; ---------------------&#10;Setup .. &#10;Input can't be empty&#10;tearDown .. &#10;&#10;--------------------- &gt;&gt; end captured stdout &lt;&lt; ----------------------"><![CDATA[  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 60, in testPartExecutor
+    yield
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 676, in run
+    self._callTestMethod(testMethod)
+  File "C:\Users\moham\anaconda3\lib\unittest\case.py", line 633, in _callTestMethod
+    method()
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\test_calculatorApp.py", line 18, in test_user_input
+    self.assertEqual(check_user_input(
+  File "C:\Users\moham\Desktop\New folder (6)\UnitTestInPython\calculatorApp.py", line 6, in check_user_input
+    raise ValueError("Input can't be empty")
+Input can't be empty
+-------------------- >> begin captured stdout << ---------------------
+Setup .. 
+Input can't be empty
+tearDown .. 
+
+--------------------- >> end captured stdout << ----------------------]]></error><system-out><![CDATA[Setup .. 
+Input can't be empty
+tearDown .. 
+]]></system-out></testcase><testcase classname="test_calculatorApp.TestCalculateWithoutMock" name="test_AddPass" time="0.000"></testcase></testsuite>
